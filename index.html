@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6729/6729598.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>ROCK PAPER SCISSORS</h1>
+
+    <div class="container">
+        <div class="inner" id="rock">
+            <img src="Images/rock.png" alt="Rock">
+        </div>
+        <div class="inner" id="paper">
+            <img src="Images/paper.png" alt="Paper">
+        </div>
+        <div class="inner" id="scissors">
+            <img src="Images/scissors.png" alt="Scissors">
+        </div>
+    </div>
+
+    <div class="scoreCard">
+        <div class="scoreInner userScore">
+            <h4 class="userScoreh3">0</h4>
+            <h3>User</h3>
+        </div>
+        <div class="scoreInner compScore">
+            <h4 class="compScoreh3">0</h4>
+            <h3>Computer</h3>
+        </div>
+    </div>
+
+    <div class="msgContainer">
+        <p id="msg">"Play your Move"</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
