@@ -22,12 +22,6 @@ h1 {
     gap: 20px;
 }
 
-.inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .inner img {
     width: 300px;
@@ -74,4 +68,75 @@ h1 {
     border-radius: 2px;
     cursor: pointer;
     transition: background-color .1s ease-in-out;
+}
+
+/* Media Queries */
+
+@media (max-width: 950px) {
+    .inner img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 795px) {
+    .inner img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media (max-width: 665px) {
+    .inner img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #msg,
+    .scoreInner {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .inner img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    #msg,
+    .scoreCard,
+    .container {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 410px) {
+    .inner img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .inner img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
 }
