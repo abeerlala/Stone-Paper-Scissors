@@ -26,7 +26,9 @@ const displayWin = (userWin, msg, userChoice, compChoice) => {
 const checkWinner = (userChoice, compChoice) => {
     const msg = document.querySelector("#msg");
     if (userChoice === compChoice) {
-        msg.innerText = "It's A Draw"; 
+        msg.innerText = `"It's A Draw"`; 
+        msg.style.backgroundColor = "yellow";
+        msg.style.color = "black";
     } else {
         let userWin = true;
         if(userChoice === "rock") {
